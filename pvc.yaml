@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+  name: git-source-workspace
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: cp4i-file-performance-gid
+  volumeMode: Filesystem
